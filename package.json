@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Generate web component from Google Web Designer output painlessly",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Pakpoom Tiwakornkit",,
+  "bin": {
+    "gwd-to-component": "./index.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "jsdom": "^11.5.1"

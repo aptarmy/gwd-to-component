@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // import from build-in package
 const fs = require("fs");
 const path = require("path");
