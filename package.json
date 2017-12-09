@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Generate web component from Google Web Designer output painlessly",
   "main": "index.js",
-  "author": "Pakpoom Tiwakornkit",,
+  "author": "Pakpoom Tiwakornkit",
   "bin": {
     "gwd-to-component": "./index.js"
   },
