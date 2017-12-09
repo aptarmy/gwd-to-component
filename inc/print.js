@@ -17,7 +17,6 @@ exports.help = function() {
 ..####....##.##...#####.............##.....####............####....####...##...##..##.......####...##..##..######..##..##....##...
 
 \t This is a standalone package intended for those who want to use Google Web Designer as a web component.
-\t It only supports "Double Click" environment for now.
 
 \t Command Line reference
 \t gwd-to-component -s /path/to/gwd/output/folder -c container-id -l link-import-id -u http://yourhosting/components/widget-1

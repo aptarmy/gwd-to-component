@@ -14,7 +14,7 @@ To use this package just run this command line.
 
 > -c is your preferred container ID to populate component.
 
-> -l is your preferred LINK id (HTML DOM ID) which you will use to import the component to your webpage. On your webpage use this HTML code <link id="my-link-id" rel="import" href="/gdw/output/path/index.html">
+> -l is your preferred LINK id (HTML DOM ID) which you will use to import the component to your webpage. On your webpage use this HTML code `<link id="my-link-id" rel="import" href="/gdw/output/path/index.html">`
 
 > -u is host url to the output folder including http or https and port without trailling slash
 
@@ -38,3 +38,14 @@ This package is a NPM package. Before using this package be sure to install Node
 > npm install -g gwd-to-component
 
 and you are good to go.
+
+## How to export from Google Web Desginer
+
+1. Create a new Project.
+2. Do some fun stuffs.
+3. Click at `File` > `Publish` > `Locally` .
+4. Copy exported folder to another place.
+5. Run the command mentioned above to make Google Web Designer embedable as a web component. Use your copied folder as a `-s` argument.
+6. Upload the output folder to hosting.
+7. On your main webpage, add this 2 line of code `<div id="container-id"></div>` and `<link rel="import" href="http://yourhosting.com/components/widget-1">`
+8. Have fun :)
