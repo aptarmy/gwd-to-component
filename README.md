@@ -44,8 +44,9 @@ and you are good to go.
 1. Create a new Project.
 2. Do some fun stuffs.
 3. Click at `File` > `Publish` > `Locally` .
-4. Copy exported folder to another place.
-5. Run the command mentioned above to make Google Web Designer embedable as a web component. Use your copied folder as a `-s` argument.
-6. Upload the output folder to hosting.
-7. On your main webpage, add this 2 line of code `<div id="container-id"></div>` and `<link rel="import" href="http://yourhosting.com/components/widget-1">`
-8. Have fun :)
+4. Make sure only `Polite downloading` and `Groups Unpacking` are checked.
+5. Copy exported folder to another place. This folder will contain all libraries (many JS files) and index.html
+6. Run the command mentioned above to make Google Web Designer embedable as a web component. Use your copied folder as a `-s` argument.
+7. Upload the output folder to hosting.
+8. On your main webpage, add this 2 line of code `<div id="container-id"></div>` and `<link rel="import" href="http://yourhosting.com/components/widget-1">`
+9. Have fun :)
