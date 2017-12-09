@@ -23,13 +23,17 @@ To use this package just run this command line.
 This package will override index.html file from Google Web Designer output so make sure you copy GWD output folder
 to another directory and then run a command using new location as a source folder
 
-once you ran the above command upload, you can upload the output folder to web hosting and embed GWD web component like this
+once you ran the above command upload, you can upload the output folder to web hosting. Then plaece `link` tag in the `head` tag. It will look like this
+
+`<link rel="import" href="http://yourhosting.com/component/widget-1">`
+
+and embed GWD web component anywhere on your website like this
 
 `<div id="my-container-id"></div>`
 
 ## Installation
 
-This package a NPM package. Before using this package be sure to install Node.js. 
+This package is a NPM package. Before using this package be sure to install Node.js. 
 
 > npm install -g gwd-to-component
 
