@@ -24,9 +24,9 @@ exports.help = function() {
 
 \t -s \t is Source folder from Google Web Designer output without trailling slash. This package will only parse
 \t\t index.html from the source folder.
-\t -c \t is your prefered container ID which you can use as a component on your webpage so that you can use this HTML code
+\t -c \t is your preferred container ID which you can use as a component on your webpage so that you can use this HTML code
 \t\t <div id="my-container-id"></div>
-\t -l \t is your prefered LINK id (HTML DOM ID) which you will use to import the component to your webpage. On your
+\t -l \t is your preferred LINK id (HTML DOM ID) which you will use to import the component to your webpage. On your
 \t\t webpage use this HTML code <link id="my-link-id" rel="import" href="/gdw/output/path/index.html">
 \t -u \t is host url to the output folder including http or https and port without trailling slash
 
