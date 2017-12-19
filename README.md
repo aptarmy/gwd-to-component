@@ -23,7 +23,7 @@ To use this package just run this command line.
 This package will override index.html file from Google Web Designer output so make sure you copy GWD output folder
 to another directory and then run a command using new location as a source folder
 
-once you ran the above command upload, you can upload the output folder to web hosting. Then plaece `link` tag in the `head` tag. It will look like this
+once you ran the above command, you can upload the output folder to web hosting. Then place `link` tag in the `head` tag. It will look like this
 
 `<link rel="import" href="http://yourhosting.com/component/widget-1">`
 
@@ -50,3 +50,6 @@ and you are good to go.
 7. Upload the output folder to hosting.
 8. On your main webpage, add this 2 line of code `<div id="container-id"></div>` and `<link rel="import" href="http://yourhosting.com/components/widget-1">`
 9. Have fun :)
+
+## If you got some bugs
+This package is really new so it's not possible to have a perfect package in just few releases. If you did ran in to some bugs please [Report on Git repository](https://github.com/aptarmy/gwd-to-component/issues)
