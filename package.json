@@ -1,6 +1,6 @@
 {
   "name": "gwd-to-component",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Generate web component from Google Web Designer output painlessly",
   "main": "index.js",
   "author": "Pakpoom Tiwakornkit",
