@@ -12,7 +12,7 @@ const mkdir = require("./inc/mkdir");
 const cpFiles = require("./inc/cp-files");
 
 // declare variables
-let projectName, sourceFolder, outputFolder, containerId, linkImportId, hostUrl, isHelp, isEmbedInstruct;
+let projectName, sourceFolder, outputFolder, containerId, hostUrl, isHelp, isDependenciesInstruct;
 let inputFile;
 
 // get arguments
@@ -48,9 +48,6 @@ if (process.argv.indexOf("-o") !== -1) {
 if (process.argv.indexOf("-c") !== -1) {
 	containerId = process.argv[process.argv.indexOf("-c") + 1];
 }
-if (process.argv.indexOf("-l") !== -1) {
-	linkImportId = process.argv[process.argv.indexOf("-l") + 1];
-}
 if (process.argv.indexOf("-u") !== -1) {
 	hostUrl = process.argv[process.argv.indexOf("-u") + 1];
 	// remove trailling slash
@@ -59,8 +56,8 @@ if (process.argv.indexOf("-u") !== -1) {
 if (process.argv.indexOf("-h") !== -1 || process.argv.indexOf("--help") !== -1) {
 	isHelp = true;
 }
-if (process.argv.indexOf("-e") !== -1 ) {
-	isEmbedInstruct = true;
+if (process.argv.indexOf("-d") !== -1 ) {
+	isDependenciesInstruct = true;
 }
 
 // if users need help, print help
@@ -69,14 +66,14 @@ if (isHelp) {
 	return;
 }
 
-// if users need embed instruction
-if (isEmbedInstruct) {
-	print.embedInstruction();
+// if users need instruction to load dependencies correctly
+if (isDependenciesInstruct) {
+	print.dependenciesInstruct();
 	return;
 }
 
 // check if all required arguments are defined
-if (!projectName || !sourceFolder || !outputFolder || !containerId || !linkImportId  || !hostUrl) {
+if (!projectName || !sourceFolder || !outputFolder || !containerId  || !hostUrl) {
 	print.error();
 	return false;
 }
@@ -132,7 +129,7 @@ function generateOutputFiles(indexHTMLInput) {
 
 function generateIndexHTML(indexHTMLInput) {
 	// Generate HTML to memory
-	const htmlOutput = genOutput.indexHTML(indexHTMLInput, containerId, linkImportId, getHostUrl(hostUrl), projectName);
+	const htmlOutput = genOutput.indexHTML(indexHTMLInput, containerId, getHostUrl(hostUrl), projectName);
 	// create HTML output file
 	write.write(htmlOutput, `${outputFolder}/${projectName}/${containerId}/index.html`);
 }

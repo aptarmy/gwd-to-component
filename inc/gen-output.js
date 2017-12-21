@@ -4,7 +4,7 @@
 const fs = require("fs");
 const jsonFile = require("jsonfile");
 
-exports.indexHTML = function(html, containerId, importLinkId, hostUrl, projectName) {
+exports.indexHTML = function(html, containerId, hostUrl, projectName) {
 	console.log("\t Generating output to memory");
 
 	// add srcipt for web component to work
@@ -22,8 +22,8 @@ exports.indexHTML = function(html, containerId, importLinkId, hostUrl, projectNa
 			container.appendChild(link.import.querySelector("gwd-doubleclick"));
 		</script>
 	`;
-	script = script.replace("container-id", containerId);
-	script = script.replace("import-link-id", importLinkId);
+	script = script.replace("container-id", `gwd-${containerId}`);
+	script = script.replace("import-link-id", `gwd-${containerId}-source`);
 	html = html.replace(/document\.(?!body)/g, "document.currentScript.ownerDocument.");
 	html = html.replace("</body>", `${script}</body>`);
 

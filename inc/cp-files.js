@@ -31,5 +31,6 @@ function copyFile(source, target, cb) {
             cb(err);
             cbCalled = true;
         }
+        writeStream.end();
     }
 }

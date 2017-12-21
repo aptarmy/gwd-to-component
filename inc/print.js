@@ -9,7 +9,7 @@ exports.error = function() {
     `);
 }
 
-exports.embedInstruction = function() {
+exports.dependenciesInstruct = function() {
     const dependenciesFile = "./.dependencies.json";
     if(fs.existsSync(dependenciesFile)) {
         const dependenciesJSON = jsonFile.readFileSync(dependenciesFile, { encoding: "utf8" });
@@ -38,9 +38,10 @@ exports.help = function() {
 
 \t "GWT To Component" is a standalone package intended for those who want to use Google Web Designer as a web component.
 
-\t Command Line reference
-\t gwd-to-component -s /path/to/gwd/output/folder -c container-id -l link-import-id -u http://yourhosting/components/widget-1
+\t Command Pattern.
+\t gwd-to-component -p myproject01 -s /path/to/gwd-output/ -o /path/to/output -c container-id -l link-import-id -u http://yourhosting/components/widget-1
 
+\t Arguments reference.
 \t -s \t is Source folder from Google Web Designer output without trailling slash.
 \t -o \t is Output folder generated from this package without trailling slash. The Folder path you spacified must exists
 \t\t otherwise errors will occure. This package will create subdirectory named "gwd-to-component-output" in that directory.
@@ -55,6 +56,7 @@ exports.help = function() {
 \t\t If you decide to host your components on "Github Page" then host URL might be "https://username.github.io/repository"
 \t\t and upload your project folder to the root folder of your repository. This option will be ommited if ".dependencies.json"
 \t\t exists as we want every component in the project has the same host URL.
+\t -d is All dependencies that you have to load in to your main page. just copy and paste in your "head" tag.
 
 \t\t For full documenation please go to my Github at https://github.com/aptarmy/gwd-to-component
 
