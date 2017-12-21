@@ -48,7 +48,7 @@ and you are good to go.
 
 > `-o`  is Output folder generated from this package without trailling slash. The Folder path you spacified must exists otherwise errors will occure. This package will create subdirectory named `gwd-to-component-output` in that directory. for example if you spacify `/my/output` as an output folder, sub folder will be created at `/my/output/gwd-to-component-output`
 
-> `-p`  is Your desired project name. Please name the project with lower-case letters and not special charecters included.This package will create new folder under "gwd-to-component-output" folder. Your project name will be used as the folder name, for example `/my/output/gwd-to-component-output/project-name`. One project is intended for one website to embed.
+> `-p`  is Your desired project name. Please name the project with lower-case letters and not special charecters included.This package will create new folder under "gwd-to-component-output" folder. Your project name will be used as the folder name, for example `/my/output/gwd-to-component-output/project-name`. One project is intended to be hosted on only one website/server.
 
 > `-c` is your preferred `contianerId` to populate component. This will create new component folder the same name as your `containerId` inside your project folder, for example `/my/output/gwd-to-component-output/project-name/containerId`. After you ran the command and uploaded project folder to your website, you can add the embeded code on your main web page like this `<div id="gwd-${yourContainerId}"></div>` and `<link id="gwd-${yourContainerId}-source" rel="import" href="http://yourwebsite.com/project-name/container-id/index.html">`.
 
@@ -66,7 +66,7 @@ and you are good to go.
 4. Add a bit of code to `index.html` to make this file embedable as a web component.
 ### For all media files such as images and audio files.
 1. This package rewrite relative source path, for example `/my-image.png`, to URL based on your `-u`, `-p` and `-c` option. For example if you provide `http://username.github.io/repository` as `-u` argument, `myproject` as `-p` argument and `my-component` as `-c` argument, then the source path will be rewrited as `http://username.github.io/repository/myproject/my-component/my-image.png`.
-2. Copy all media files to component folder(indeide project folder) -- the same folder as `index.html` file.
+2. Copy all media files to component folder(inside project folder) -- the same folder as `index.html` file.
 
 
 ## If you got some bugs
