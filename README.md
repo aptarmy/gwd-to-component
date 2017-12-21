@@ -52,7 +52,7 @@ and you are good to go.
 
 > `-c` is your preferred `contianerId` to populate component. This will create new component folder the same name as your `containerId` inside your project folder, for example `/my/output/gwd-to-component-output/project-name/containerId`. After you ran the command and uploaded project folder to your website, you can add the embeded code on your main web page like this `<div id="gwd-${yourContainerId}"></div>` and `<link id="gwd-${yourContainerId}-source" rel="import" href="http://yourwebsite.com/project-name/container-id/index.html">`.
 
-> `-u` is host URL that will host your project folder including http or https and port without trailling slash. If you decide to host your components on "Github Page" then host URL might be `https://username.github.io/repository` and upload your project folder to the root folder of your repository. This option will be ommited if `.dependencies.json` exists as we want every component in the project has the same host URL.
+> `-u` is host URL that will host your project folder including http or https and port without trailling slash. If you decide to host your components on "Github Page" then host URL might be `https://username.github.io/repository` and upload your project folder to the root folder of your repository. This option will be omitted if `.dependencies.json` exists as we want every component in the project has the same host URL.
 
 > `-d` is All dependencies that you have to load into your main page. just copy and paste in your `head` tag
 
