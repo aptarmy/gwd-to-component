@@ -7,7 +7,7 @@
   "bin": {
     "gwd-to-component": "./index.js"
   },
-  "preferGlobal: true,
+  "preferGlobal": "true",
   "license": "ISC",
   "dependencies": {
     "jsonfile": "^4.0.0"
