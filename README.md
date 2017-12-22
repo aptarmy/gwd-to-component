@@ -1,5 +1,8 @@
 # Google Web Designer to Web Component
 
+## This repo is not maintained.
+Google Web Designer is not designed to crate an elements that can be embeded as a web component. In contrary, it's designed to be embeded in `iframe` or `object` tag. As such, It's almost imposible to convert whatever exported from Google Web Designer to a web component and there will be so buggy if you try to do so. It's better to use ReactJS and create your own component in text editor of your choice.
+
 ## Introduction
 
 Convert your GWD project to web component easily with single command line and embed your awesome GWD component in HTML5 way  to any website you want.
